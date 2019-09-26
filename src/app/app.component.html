@@ -1,0 +1,31 @@
+<app-home></app-home>
+<app-aboutus></app-aboutus>
+<app-products></app-products>
+<app-services></app-services>
+<app-platform></app-platform>
+<app-contact></app-contact>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Routing</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home">Home</a></li>
+      <li><a routerLink="aboutus">Aboutus</a></li>
+      <li><a routerLink="products">Products</a></li>
+      <!-- <li><a routerLink="services">Services</a></li> -->
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"routerLink="services">Services</a>
+      <ul class="dropdown-menu">
+        <li><a routerLink="java">Java</a></li>
+        <li><a routerLink="ui">Ui</a></li>
+      </ul>
+      
+      </li>
+      <li><a routerLink="platform">Platform</a></li>
+      <li><a routerLink="contact">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
